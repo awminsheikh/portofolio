@@ -326,16 +326,17 @@ img {
   justify-items: center;
 }
 
-.home__scroll-icon{
+.home__scroll-icon {
   font-size: 1.25rem;
 }
-.home__scroll-name{
+
+.home__scroll-name {
   font-size: var(--smaller-font-size);
   transform: rotate(-90deg);
 }
 
 /*=============== BUTTONS ===============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   padding: .75rem 1rem;
@@ -343,19 +344,60 @@ img {
   font-weight: var(--font-medium);
   transition: .4s;
 }
-.button:hover{
+
+.button:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
 }
-.button--ghost{
+
+.button--ghost {
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2.5rem;
+}
 
+.about__img {
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
 
+.about__data {
+  text-align: center;
+}
+
+.about__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.about__box{
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+}
+
+.about__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+.about_-title{
+  font-size: var(--small-font-size);
+}
+.about__subtitle{
+  font-size: var(--tiny-font-size);
+}
+.about__description{
+  margin-bottom: 2rem;
+}
 /*=============== SKILLS ===============*/
 
 
